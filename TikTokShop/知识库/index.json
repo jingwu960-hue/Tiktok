@@ -1,0 +1,119 @@
+{
+  "version": "1.3",
+  "last_updated": "2026-06-20",
+  "total_entries": 11,
+  "auto_learn_enabled": true,
+  "traversal_limit": 10,
+  "entries": [
+    {
+      "keywords": ["选品", "商品选择", "爆款", "潜力品类", "选品策略", "选品技巧", "品类分析"],
+      "file": "选品策略.md",
+      "topics": ["选品铁律", "漏斗模型", "潜力品类", "避坑指南"],
+      "priority": 1
+    },
+    {
+      "keywords": ["上架", "商品上架", "标题", "主图", "发布", "商品信息"],
+      "file": "商品上架.md",
+      "topics": ["上架流程", "标题公式", "主图要求", "定价计算"],
+      "priority": 1
+    },
+    {
+      "keywords": ["视频", "短视频", "带货视频", "视频制作", "剪辑"],
+      "file": "短视频制作.md",
+      "topics": ["爆款结构", "视频模板", "拍摄技巧", "内容矩阵"],
+      "priority": 1
+    },
+    {
+      "keywords": ["冷启动", "破零", "新店", "起步", "新店运营"],
+      "file": "冷启动策略.md",
+      "topics": ["60天计划", "出单渠道", "预算控制", "成功标准"],
+      "priority": 1
+    },
+    {
+      "keywords": ["政策", "规则", "考核指标", "违规", "申诉", "平台规则"],
+      "file": "平台政策.md",
+      "topics": ["考核指标", "发货规则", "知识产权", "违规申诉"],
+      "priority": 1
+    },
+    {
+      "keywords": ["定价", "价格", "利润", "成本", "售价"],
+      "file": "定价策略.md",
+      "topics": ["定价公式", "成本计算", "利润分析", "促销策略"],
+      "priority": 1
+    },
+    {
+      "keywords": ["达人", "KOL", "网红", "带货达人", "联盟营销", "合作"],
+      "file": "达人合作.md",
+      "topics": ["达人选择", "合作模式", "佣金谈判", "寄样流程"],
+      "priority": 1
+    },
+    {
+      "keywords": ["养号", "账号权重", "账号定位", "粉丝运营", "账号管理"],
+      "file": "账号运营.md",
+      "topics": ["养号流程", "内容定位", "主页优化", "矩阵打法"],
+      "priority": 1
+    },
+    {
+      "keywords": ["广告", "投放", "GMV Max", "Smart Promotion", "推广"],
+      "file": "广告投放.md",
+      "topics": ["广告类型", "出价策略", "素材制作", "数据分析"],
+      "priority": 1
+    },
+    {
+      "keywords": ["直播", "直播带货", "话术", "互动", "场控", "直播卖货"],
+      "file": "直播带货.md",
+      "topics": ["直播准备", "话术模板", "互动技巧", "选品排品"],
+      "priority": 1
+    },
+    {
+      "keywords": ["问题", "FAQ", "常见问题", "问答", "疑难解答"],
+      "file": "常见问题.md",
+      "topics": ["常见问题", "疑难解答", "最佳实践"],
+      "priority": 2
+    }
+  ],
+  "search_rules": {
+    "priority": "local_first",
+    "threshold": 0.6,
+    "fallback_to_web": true
+  },
+  "auto_capture_rules": {
+    "patterns": [
+      "学到了.*",
+      "知识.*是.*",
+      "技巧.*：.*",
+      "Q:.*A:.*",
+      "如何.*",
+      "策略.*",
+      "方法.*",
+      "注意事项.*",
+      "https?://.*tiktokglobalshop.*",
+      "https?://.*1688\.com.*",
+      "课程.*",
+      "教程.*",
+      "指南.*"
+    ],
+    "exclude_patterns": [
+      "你好",
+      "谢谢",
+      "再见",
+      "在吗",
+      "帮我",
+      "我想"
+    ]
+  },
+  "link_learning_rules": {
+    "allowed_domains": [
+      "tiktokglobalshop.com",
+      "seller.tiktokglobalshop.com",
+      "university.tiktokglobalshop.com",
+      "1688.com",
+      "taobao.com",
+      "jd.com",
+      "pinduoduo.com",
+      "aliexpress.com"
+    ],
+    "max_content_length": 5000,
+    "auto_categorize": true
+  }
+}
