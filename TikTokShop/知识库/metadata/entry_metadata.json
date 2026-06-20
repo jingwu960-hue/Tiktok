@@ -13,27 +13,67 @@
       "title": "Q:如何提高商品曝光？A:优化标题关键词、制作高质量主图、设置合理价格、参与平台活动",
       "created_at": "2026-06-20T14:46:11.185382",
       "version": "1.0"
+    },
+    {
+      "id": "entry_peaks_premium_20260620",
+      "category": "选品策略",
+      "title": "PEAKS方法论 - Premium Product（高品质商品）：商品质量决定用户体验和复购率",
+      "created_at": "2026-06-20T15:30:00.000000",
+      "version": "1.0",
+      "source": "TikTok Shop美区跨境POP PEAKS出海经营方法论白皮书"
+    },
+    {
+      "id": "entry_peaks_engaging_20260620",
+      "category": "账号运营",
+      "title": "PEAKS方法论 - Engaging Content（商家内容加速）：内容推动品效合一，带动生态繁荣",
+      "created_at": "2026-06-20T15:30:00.000000",
+      "version": "1.0",
+      "source": "TikTok Shop美区跨境POP PEAKS出海经营方法论白皮书"
+    },
+    {
+      "id": "entry_peaks_kol_20260620",
+      "category": "达人合作",
+      "title": "PEAKS方法论 - KOL Collaboration（达人内容放量）：达人合作不仅是销售渠道，更是内容生产和品牌传播的重要方式",
+      "created_at": "2026-06-20T15:30:00.000000",
+      "version": "1.0",
+      "source": "TikTok Shop美区跨境POP PEAKS出海经营方法论白皮书"
+    },
+    {
+      "id": "entry_peaks_activities_20260620",
+      "category": "广告投放",
+      "title": "PEAKS方法论 - Activities & Advertising（营销放大）：通过活动和广告投放，放大优质内容和商品的曝光",
+      "created_at": "2026-06-20T15:30:00.000000",
+      "version": "1.0",
+      "source": "TikTok Shop美区跨境POP PEAKS出海经营方法论白皮书"
+    },
+    {
+      "id": "entry_market_analysis_20260620",
+      "category": "平台政策",
+      "title": "市场环境分析：全球电商增长率10%/年，内容电商GMV过去3年翻倍，TikTok Shop美区月活用户超1.7亿",
+      "created_at": "2026-06-20T15:30:00.000000",
+      "version": "1.0",
+      "source": "Kalodata 2024 TikTok电商白皮书"
     }
   ],
-  "total_entries": 2,
+  "total_entries": 7,
   "total_categories": 11,
-  "last_updated": "2026-06-20T14:46:11.185437",
+  "last_updated": "2026-06-20T15:30:00.000000",
   "backup_count": 0,
   "version_history": [],
   "statistics": {
-    "total_created": 2,
+    "total_created": 7,
     "total_updated": 0,
     "total_deleted": 0,
     "categories": {
-      "选品策略": 1,
+      "选品策略": 2,
       "商品上架": 1,
       "短视频制作": 0,
       "冷启动策略": 0,
-      "平台政策": 0,
+      "平台政策": 2,
       "定价策略": 0,
-      "达人合作": 0,
-      "账号运营": 0,
-      "广告投放": 0,
+      "达人合作": 2,
+      "账号运营": 2,
+      "广告投放": 2,
       "直播带货": 0,
       "常见问题": 0
     }

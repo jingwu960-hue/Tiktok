@@ -1,0 +1,109 @@
+{
+  "shop_info": {
+    "market": "越南",
+    "start_date": "2026-06-19",
+    "budget": "5000以内",
+    "time_available": "5小时以上（全职）",
+    "has_supplier": "一件代发（1688/拼多多）",
+    "has_tiktok_account": "✅ 已注册（Cool Base）",
+    "has_tiktok_account_status": "已注册，资料已完善",
+    "shop_status": "已注册",
+    "shop_code": "CNVNCBBRL4FX",
+    "shop_category": "时尚配件",
+    "shop_url": "https://seller.tiktok.com/"
+  },
+  "cost_structure": {
+    "purchase_price": "≤20元（含国内快递+货代）",
+    "domestic_warehouse_to_overseas": "TikTok Shop平台补贴（免费）",
+    "overseas_to_customer": "客户承担",
+    "total_cost_to_seller": "≤20元"
+  },
+  "cost_control": {
+    "purchase_price_limit": 20,
+    "target_profit_margin": "30%以上"
+  },
+  "daily_metrics": [
+    {
+      "date": "2026-06-19",
+      "day_number": 1,
+      "products_listed": 20,
+      "orders": 0,
+      "gmv": 0,
+      "videos": 0,
+      "followers": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "add_to_cart": 0,
+      "refunds": 0
+    },
+    {
+      "date": "2026-06-20",
+      "day_number": 2,
+      "products_listed": 20,
+      "orders": 0,
+      "gmv": 0,
+      "videos": 0,
+      "followers": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "add_to_cart": 0,
+      "refunds": 0
+    }
+  ],
+  "product_analysis": {
+    "total_products": 20,
+    "categories": [
+      "戒指（男戒、女戒、情侣戒）",
+      "眼镜（太阳镜）",
+      "手表（女表、儿童表）",
+      "手镯"
+    ],
+    "price_range": {
+      "min": "128130 VND (≈36元)",
+      "max": "291137 VND (≈82元)",
+      "avg": "200000 VND (≈56元)"
+    },
+    "top_products": [
+      {
+        "name": "Nhẫn nam xoay titan thép",
+        "price": "209490 VND",
+        "type": "男戒"
+      },
+      {
+        "name": "Kính râm GM thời trang cao cấp",
+        "price": "291137 VND",
+        "type": "太阳镜"
+      },
+      {
+        "name": "Nhẫn đính đá Moissanite",
+        "price": "139778 VND",
+        "type": "女戒"
+      },
+      {
+        "name": "Đồng hồ nữ cao cấp",
+        "price": "221702 VND",
+        "type": "手表"
+      },
+      {
+        "name": "Vòng tay hoa và bướm",
+        "price": "186371 VND",
+        "type": "手镯"
+      }
+    ]
+  },
+  "tasks_completed": [
+    "完成基础信息收集",
+    "TikTok Shop店铺注册",
+    "时尚配件类目选择",
+    "上架20个商品",
+    "TikTok账号注册完成（用户名：Cool Base）",
+    "个人简介设置完成",
+    "创建定价策略指南文档",
+    "商品侵权风险检测",
+    "学习TikTok Shop东南亚新商政策必修课"
+  ],
+  "next_day_plan": "开始制作带货视频，获取首批曝光",
+  "warnings": []
+}
