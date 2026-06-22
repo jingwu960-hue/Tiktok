@@ -64,9 +64,9 @@ description: "从URL自动抓取TikTok/电商相关知识。输入URL后使用Pl
 
 ```
 1. 确定保存文件路径
-   - 知识库主目录：/Users/wujing/QingZhen/Tiktok/TikTokShop/知识库/
+   - 知识库主目录（相对项目根）：`TikTokShop/知识库/`
 2. 命名规范：{分类名}.md
-3. 更新 index.json 添加新条目
+3. 更新同目录 index.json 添加新条目
 4. 保存文件
 5. 返回确认信息
 ```
@@ -163,18 +163,7 @@ description: "从URL自动抓取TikTok/电商相关知识。输入URL后使用Pl
 
 ## 允许的域名列表
 
-```
-tiktokglobalshop.com
-seller.tiktokglobalshop.com
-university.tiktokglobalshop.com
-1688.com
-taobao.com
-jd.com
-pinduoduo.com
-aliexpress.com
-kalowave.feishu.cn
-kalodata.com
-```
+以 `TikTokShop/知识库/index.json` 的 `link_learning_rules.allowed_domains` 为**唯一事实源**，抓取前读取该配置校验域名。新增白名单只改 index.json，不在此处重复维护（当前含 tiktokglobalshop 系、1688、taobao、jd、pinduoduo、aliexpress、kalowave.feishu.cn、kalodata.com）。
 
 ---
 

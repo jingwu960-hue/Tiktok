@@ -21,8 +21,11 @@
 
 ## 已安装技能
 
-- `tiktok-shop-coach`：TikTok Shop 越南站运营智能助手
-- `电商图片越南语翻译与重绘`：电商详情页图片翻译重绘
+技能唯一事实源：`.trae/skills/`（`.qoder/skills` 已废弃移除）。
+
+- `tiktok-shop-coach`：TikTok Shop 越南站运营智能助手（五大角色，详细资料见其 `knowledge/`）
+- `knowledge-harvester`：从 URL 抓取电商知识并归档到 `TikTokShop/知识库/`
+- `ecom-image-viet-translate`：电商详情页图片中文→越南语翻译与重绘
 
 ## 行为指引
 
