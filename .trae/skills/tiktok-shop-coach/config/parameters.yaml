@@ -1,0 +1,110 @@
+# 关键参数表
+# 统一管理所有运营参数，其他文件引用此文件而非复制
+
+# ===== 选品铁律 =====
+selection_rules:
+  weight_limit:
+    value: "200g"
+    description: "超过则物流成本过高"
+  volume_limit:
+    value: "20×15×10cm"
+    description: "超过则运费大增"
+  price_range:
+    value: "$5-$15"
+    description: "东南亚黄金区间，超$20转化率断崖式下跌"
+  profit_margin:
+    value: "≥30%"
+    description: "低于此值不推荐，新手建议25%起步"
+  competition_threshold:
+    value: 100
+    description: "店铺数<100为蓝海，>100需谨慎"
+  min_purchase_price:
+    value: "3元"
+    description: "低于此值利润太薄扛不住退货"
+
+# ===== 平台考核指标 =====
+platform_metrics:
+  shop_rating:
+    target: "≥4.5分"
+    consequence: "流量降权"
+  nrr:
+    target: "<5%"
+    full_name: "差评率"
+    consequence: "账号风险"
+  ldr:
+    target: "<10%"
+    full_name: "延迟履约率"
+    consequence: "处罚警告"
+  sfcr:
+    target: "<2.5%"
+    full_name: "商责取消率"
+    consequence: "账号风险"
+
+# ===== 成本参数 =====
+cost_parameters:
+  shipping_rate:
+    value: "2.3-3元/kg"
+    description: "东南亚专线"
+  commission_rate:
+    value: "6%"
+    description: "TikTok Shop越南站"
+  target_profit_margin:
+    value: "≥30%"
+    description: "新手建议25%起步"
+  exchange_rate:
+    value: "1 CNY ≈ 3,872 VND"
+    description: "实时查询更新"
+  ad_budget_ratio:
+    value: "20%"
+    description: "广告预算预留售价的20%"
+
+# ===== 冷启动预算（每日） =====
+cold_start_budget:
+  phase_1:
+    days: "1-15天"
+    product_card: "$25"
+    short_video: "$0"
+    influencer: "$0"
+    livestream: "暂缓"
+  phase_2:
+    days: "16-30天"
+    product_card: "$25"
+    short_video: "$25"
+    influencer: "$0"
+    livestream: "试水"
+  phase_3:
+    days: "31-60天"
+    product_card: "$25"
+    short_video: "$25"
+    influencer: "$0"
+    livestream: "聚焦"
+
+# ===== 短视频参数 =====
+short_video:
+  ideal_duration: "15-25秒"
+  completion_rate_target: ">40%"
+  update_frequency: "日更3-10条"
+  structure:
+    hook: "0-3秒：痛点钩子"
+    demo: "3-8秒：解法演示"
+    cta: "8-15秒：行动指令"
+  templates:
+    - "前后对比法：展示使用前后的强烈反差"
+    - "场景痛点法：还原日常生活中的具体槽点"
+    - "反常识惊喜法：超出预期的功能制造惊喜"
+
+# ===== 定价公式 =====
+pricing:
+  formula: "售价 = 采购价 + 跨境运费 + 平台佣金 + 利润"
+  display_rules:
+    rounding: "金额四舍五入到千位"
+    separator: "使用三位分隔符（如 174,240 VND）"
+    note: "标注汇率更新时间"
+
+# ===== 供应商沟通 =====
+supplier:
+  language: "中文"
+  model: "一件代发"
+  platforms:
+    - "1688"
+    - "拼多多"

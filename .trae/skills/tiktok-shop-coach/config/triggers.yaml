@@ -1,0 +1,115 @@
+# 触发条件配置
+# 定义正向/负向触发规则和角色映射
+
+triggers:
+  positive:
+    - pattern: "今天该做什么|每日任务|第.+天"
+      role: coach
+      description: "用户请求每日运营指导"
+
+    - pattern: "选品|卖什么|利润分析|竞争分析"
+      role: product-expert
+      description: "用户请求选品分析"
+
+    - pattern: "上架|标题|SEO|卖点|视频创意"
+      role: listing-expert
+      description: "用户请求商品上架优化"
+
+    - pattern: "数据分析|曝光|点击|转化|GMV"
+      role: data-analyst
+      description: "用户请求数据分析"
+
+    - pattern: "月计划|周计划|整体规划|长期目标"
+      role: director
+      description: "用户请求月度/周度规划"
+
+    - pattern: "定价|计算|成本|利润"
+      role: product-expert
+      description: "用户请求定价计算"
+
+    - pattern: "冷启动|破零|新手"
+      role: coach
+      description: "用户请求冷启动指导"
+
+    - pattern: "短视频|视频制作|内容创作"
+      role: listing-expert
+      description: "用户请求短视频制作指导"
+
+    - pattern: "平台政策|规则|考核"
+      role: coach
+      description: "用户询问平台政策"
+
+    - pattern: "达人合作|KOL|网红"
+      role: product-expert
+      description: "用户询问达人合作"
+
+    - pattern: "广告投放|投流|ADS"
+      role: data-analyst
+      description: "用户询问广告投放"
+
+    - pattern: "直播|livestream"
+      role: coach
+      description: "用户询问直播带货"
+
+  negative:
+    - pattern: "^你好$|^谢谢$|^再见$|^hi$|^bye$"
+      description: "纯问候闲聊，不触发技能"
+    - pattern: "与TikTok Shop无关的话题"
+      description: "非业务相关话题"
+    - pattern: "^帮助$|^help$"
+      description: "仅查看帮助信息"
+
+roles:
+  director:
+    name: 运营总监
+    workflow: workflows/monthly-plan.md
+    template: config/templates/monthly-plan.md
+    description: "负责月度/周度运营规划"
+
+  coach:
+    name: 运营教练
+    workflow: workflows/daily-guide.md
+    template: config/templates/daily-tasks.md
+    description: "负责每日运营指导和冷启动策略"
+
+  product-expert:
+    name: 选品专家
+    workflow: workflows/product-select.md
+    template: config/templates/product-analysis.md
+    description: "负责选品分析、定价计算、达人合作"
+
+  listing-expert:
+    name: 运营专家
+    workflow: workflows/product-listing.md
+    template: null
+    description: "负责商品上架、标题优化、短视频制作"
+
+  data-analyst:
+    name: 数据分析师
+    workflow: workflows/data-analysis.md
+    template: config/templates/data-report.md
+    description: "负责数据分析、广告投放分析"
+
+  log-recorder:
+    name: 日志记录员
+    workflow: workflows/log-recorder.md
+    template: config/templates/daily-log.md
+    description: "自动记录每次对话内容到日志文件，支持叙事+数据双线结构"
+    auto_trigger: true
+    trigger_conditions:
+      - "对话结束时自动触发"
+      - "用户说'保存日志'、'记录一下'时手动触发"
+
+# 链接学习触发
+link_learning:
+  enabled: true
+  allowed_domains:
+    - tiktokglobalshop.com
+    - seller.tiktokglobalshop.com
+    - university.tiktokglobalshop.com
+    - 1688.com
+    - taobao.com
+    - jd.com
+    - pinduoduo.com
+    - aliexpress.com
+  max_links_per_session: 10

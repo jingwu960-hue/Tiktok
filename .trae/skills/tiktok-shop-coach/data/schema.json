@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TikTok Shop 店铺数据",
+  "description": "shop-metrics.json 数据结构规范",
+  "type": "object",
+  "required": ["shop_info", "daily_metrics"],
+  "properties": {
+    "shop_info": {
+      "type": "object",
+      "required": ["market", "start_date", "shop_code"],
+      "properties": {
+        "market": {
+          "type": "string",
+          "description": "目标市场",
+          "default": "越南"
+        },
+        "start_date": {
+          "type": "string",
+          "format": "date",
+          "description": "店铺启动日期"
+        },
+        "budget": {
+          "type": "string",
+          "description": "预算范围"
+        },
+        "time_available": {
+          "type": "string",
+          "description": "每日可用时间"
+        },
+        "has_supplier": {
+          "type": "string",
+          "description": "供货方式"
+        },
+        "has_tiktok_account": {
+          "type": "string",
+          "description": "TikTok账号状态"
+        },
+        "has_tiktok_account_status": {
+          "type": "string",
+          "description": "账号详细状态"
+        },
+        "shop_status": {
+          "type": "string",
+          "description": "店铺状态",
+          "enum": ["未注册", "已注册", "运营中", "暂停"]
+        },
+        "shop_code": {
+          "type": "string",
+          "description": "店铺编码"
+        },
+        "shop_category": {
+          "type": "string",
+          "description": "店铺类目"
+        },
+        "shop_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "店铺链接"
+        }
+      }
+    },
+    "cost_structure": {
+      "type": "object",
+      "properties": {
+        "purchase_price": { "type": "string" },
+        "domestic_warehouse_to_overseas": { "type": "string" },
+        "overseas_to_customer": { "type": "string" },
+        "total_cost_to_seller": { "type": "string" }
+      }
+    },
+    "cost_control": {
+      "type": "object",
+      "properties": {
+        "purchase_price_limit": {
+          "type": "number",
+          "default": 20
+        },
+        "target_profit_margin": {
+          "type": "string",
+          "default": "30%以上"
+        }
+      }
+    },
+    "daily_metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "day_number"],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "日期"
+          },
+          "day_number": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "运营天数"
+          },
+          "products_listed": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "已上架商品数"
+          },
+          "orders": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "订单数"
+          },
+          "gmv": {
+            "type": "number",
+            "minimum": 0,
+            "default": 0,
+            "description": "成交总额"
+          },
+          "videos": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "发布视频数"
+          },
+          "followers": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "粉丝数"
+          },
+          "impressions": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "曝光量"
+          },
+          "clicks": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "点击量"
+          },
+          "ctr": {
+            "type": ["number", "string"],
+            "default": 0,
+            "description": "点击率"
+          },
+          "add_to_cart": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "加购数"
+          },
+          "refunds": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 0,
+            "description": "退款数"
+          }
+        }
+      }
+    },
+    "product_analysis": {
+      "type": "object",
+      "properties": {
+        "total_products": {
+          "type": "integer",
+          "description": "总商品数"
+        },
+        "categories": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "商品类目列表"
+        },
+        "price_range": {
+          "type": "object",
+          "properties": {
+            "min": { "type": "string" },
+            "max": { "type": "string" },
+            "avg": { "type": "string" }
+          }
+        },
+        "top_products": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "price": { "type": "string" },
+              "type": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "tasks_completed": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "已完成任务列表"
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "警告信息列表"
+    }
+  }
+}

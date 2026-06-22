@@ -50,15 +50,37 @@
       "ctr": 0,
       "add_to_cart": 0,
       "refunds": 0
+    },
+    {
+      "date": "2026-06-22",
+      "day_number": 4,
+      "products_listed": 19,
+      "orders": 0,
+      "gmv": 0,
+      "videos": 0,
+      "followers": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "add_to_cart": 0,
+      "refunds": 0,
+      "notes": "下架Mickey手表（侵权风险），视频素材决定采用商品图片制作幻灯片视频"
     }
   ],
   "product_analysis": {
-    "total_products": 20,
+    "total_products": 19,
     "categories": [
       "戒指（男戒、女戒、情侣戒）",
       "眼镜（太阳镜）",
       "手表（女表、儿童表）",
       "手镯"
+    ],
+    "removed_products": [
+      {
+        "name": "Mickey手表",
+        "reason": "侵权风险",
+        "removed_date": "2026-06-22"
+      }
     ],
     "price_range": {
       "min": "128130 VND (≈36元)",
