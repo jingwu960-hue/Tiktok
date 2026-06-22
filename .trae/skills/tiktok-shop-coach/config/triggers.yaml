@@ -100,6 +100,15 @@ roles:
       - "对话结束时自动触发"
       - "用户说'保存日志'、'记录一下'时手动触发"
 
+  script-writer:
+    name: 脚本编剧
+    workflow: workflows/script-writer.md
+    template: config/templates/douyin-script.md
+    description: "将当日运营日志转化为抖音口播脚本，风格真诚务实"
+    auto_trigger: true
+    trigger_after: log-recorder
+    manual_trigger_pattern: "写脚本|生成脚本|口播脚本|抖音脚本|视频脚本"
+
 # 链接学习触发
 link_learning:
   enabled: true

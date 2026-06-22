@@ -125,6 +125,7 @@ Tiktok/
 | 运营专家 | 上架、标题、SEO、卖点 | `workflows/product-listing.md` |
 | 数据分析师 | 数据分析、曝光、点击、转化 | `workflows/data-analysis.md` |
 | 日志记录员 | 自动触发（对话结束时） | `workflows/log-recorder.md` |
+| 脚本编剧 | 自动触发（日志记录后）/ 手动（写脚本） | `workflows/script-writer.md` |
 
 > 详细触发规则见 `.trae/skills/tiktok-shop-coach/config/triggers.yaml`
 
@@ -203,9 +204,10 @@ Tiktok/
 
 ### 日志系统
 
-每次对话结束后，**日志记录员**角色自动将运营内容记录到本地文件。
+每次对话结束后，**日志记录员**角色自动将运营内容记录到本地文件，随后**脚本编剧**自动生成抖音口播脚本。
 
-**存储路径**：`TikTokShop/{年份}/{月份}/{M}月{D}日.md`
+**日志存储路径**：`TikTokShop/{年份}/{月份}/{M}月{D}日.md`
+**脚本存储路径**：`TikTokShop/{年份}/{月份}/脚本/{M}月{D}日-脚本.md`
 
 **示例**：`TikTokShop/2026/6月/6月22日.md`
 
