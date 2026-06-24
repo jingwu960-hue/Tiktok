@@ -1,0 +1,22 @@
+[
+  {"id": "bgm_01", "name": "See Tình (Cukak Remix)", "artist": "Hoàng Thùy Linh", "search_query": "See Tình Cukak Remix Hoàng Thùy Linh", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_02", "name": "Cuối Cùng Thì (Cukak Remix)", "artist": "Jack - J97", "search_query": "Cuối Cùng Thì Cukak Remix Jack J97", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_03", "name": "Bo Xi Bo (Đại Mèo Remix)", "artist": "Hoàng Thùy Linh", "search_query": "Bo Xi Bo Đại Mèo Remix Hoàng Thùy Linh", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_04", "name": "Tòng Phu (Đại Mèo Remix)", "artist": "Keyo", "search_query": "Tòng Phu Đại Mèo Remix Keyo", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_05", "name": "Cắt Đôi Nỗi Sầu (Remix)", "artist": "Tăng Duy Tân", "search_query": "Cắt Đôi Nỗi Sầu Remix Tăng Duy Tân", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_06", "name": "Khuất Lối (Orinn Remix)", "artist": "H-Kray", "search_query": "Khuất Lối Orinn Remix H-Kray", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_07", "name": "Vương vấn (Remix)", "artist": "Hana Cẩm Tiên", "search_query": "Vương vấn Remix Hana Cẩm Tiên", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_08", "name": "Kiếp Má Hồng (Remix)", "artist": "Tlong", "search_query": "Kiếp Má Hồng Remix Tlong", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_09", "name": "Người Đáng Thương Là Anh (Remix)", "artist": "Only C", "search_query": "Người Đáng Thương Là Anh Remix Only C", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_10", "name": "Mong Một Ngày Anh Nhớ Đến Em (Remix)", "artist": "Hương Ly", "search_query": "Mong Một Ngày Anh Nhớ Đến Em Remix Hương Ly", "bpm_type": "fast", "template": "A"},
+  {"id": "bgm_11", "name": "Ai Đưa Em Về", "artist": "TiA", "search_query": "Ai Đưa Em Về TiA Trần Hải Châu", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_12", "name": "Thiệp hồng", "artist": "Trường Lê", "search_query": "Thiệp hồng Trường Lê", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_13", "name": "Sao cũng được", "artist": "Thành Đạt & Đông Thiên Đức", "search_query": "Sao cũng được Thành Đạt Đông Thiên Đức", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_14", "name": "Em ơi đừng khóc", "artist": "Duy Phước", "search_query": "Em ơi đừng khóc Duy Phước", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_15", "name": "Somewhere", "artist": "July", "search_query": "Somewhere July Vietnamese song", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_16", "name": "Em này", "artist": "Gin Tuấn Kiệt", "search_query": "Em này Gin Tuấn Kiệt", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_17", "name": "Ngáo Ngơ", "artist": "HIEUTHUHAI", "search_query": "Ngáo Ngơ HIEUTHUHAI", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_18", "name": "Tràn Bộ Nhớ", "artist": "Dương Domic", "search_query": "Tràn Bộ Nhớ Dương Domic", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_19", "name": "Say Yes", "artist": "Suni Hạ Linh", "search_query": "Say Yes Suni Hạ Linh", "bpm_type": "slow", "template": "B"},
+  {"id": "bgm_20", "name": "Liên Hoa", "artist": "Phương Mỹ Chi", "search_query": "Liên Hoa Phương Mỹ Chi", "bpm_type": "slow", "template": "B"}
+]
