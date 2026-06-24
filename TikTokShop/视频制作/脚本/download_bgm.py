@@ -32,15 +32,21 @@ def download_audio(search_query: str, output_path: str) -> bool:
             "yt-dlp",
             "-x",  # 只提取音频
             "--audio-format", "mp3",
-            "--audio-quality", "0",  # 最高质量
             "-o", f"{output_path}.%(ext)s",
             f"ytsearch1:{search_query}",  # 搜索并下载第一个结果
             "--no-playlist",
-            "--quiet",
-            "--no-warnings",
+            "--extractor-args", "youtube:player_client=android",  # 绕过YouTube 403限制
+            "--format", "bestaudio/best",
         ]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        if result.returncode != 0:
+            error_lines = [l for l in result.stderr.split('\n') if 'ERROR' in l]
+            if error_lines:
+                print(f"  yt-dlp错误: {error_lines[0][:200]}")
         return result.returncode == 0
+    except subprocess.TimeoutExpired:
+        print(f"  下载超时（300秒），跳过")
+        return False
     except Exception as e:
         print(f"  下载失败: {e}")
         return False
