@@ -1,0 +1,51 @@
+# 视频参数
+video:
+  resolution: "1080x1920"
+  fps: 30
+  format: "mp4"
+  codec: "libx264"
+
+# 模板参数
+templates:
+  template_a:
+    duration: 15
+    image_count: 6
+    image_duration: 1.5
+    bpm_range: [120, 140]
+    transition: "slide_left"
+    filter: "bright_warm"
+  template_b:
+    duration: 18
+    image_count: 4
+    image_duration: 3
+    bpm_range: [80, 100]
+    transition: "fade"
+    filter: "elegant_warm"
+
+# 文案模板
+subtitle_templates:
+  - name: "痛点型"
+    category_match: ["手镯", "项链"]
+  - name: "颜值型"
+    category_match: ["眼镜", "耳环"]
+  - name: "情感型"
+    category_match: ["情侣戒"]
+  - name: "性价比型"
+    category_match: ["*"]
+  - name: "潮流型"
+    category_match: ["*"]
+
+# 发布策略
+publish:
+  daily_count: [3, 5]
+  time_slots: ["19:00", "20:00", "21:00"]
+  template_rotation: "ABAB"
+
+# 路径配置
+paths:
+  products_json: "../../products.json"
+  assets_dir: "../素材库"
+  subtitle_dir: "../文案库"
+  bgm_dir: "../音乐库"
+  output_dir: "../生成视频"
+  publish_log: "../已发布/发布记录.json"
