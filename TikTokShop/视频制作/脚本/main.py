@@ -49,8 +49,12 @@ def select_subtitle_template(category: str) -> str:
     return "性价比型"
 
 
-def batch_generate():
-    """批量生成视频"""
+def batch_generate(use_bgm: bool = True):
+    """批量生成视频
+
+    Args:
+        use_bgm: 是否使用BGM。False时生成无音频视频（发布时在TikTok内选BGM）
+    """
     config = load_config()
     paths = config["paths"]
 
@@ -74,10 +78,21 @@ def batch_generate():
 
     # 检查BGM库
     bgm_dir = os.path.join(os.path.dirname(__file__), paths["bgm_dir"])
-    if not os.path.isdir(bgm_dir):
-        print(f"警告: BGM目录不存在 {bgm_dir}")
-        print("请先下载BGM到音乐库目录")
-        return
+    if use_bgm:
+        if not os.path.isdir(bgm_dir):
+            print(f"警告: BGM目录不存在 {bgm_dir}")
+            print("自动切换到无BGM模式（发布时在TikTok App内添加BGM）")
+            use_bgm = False
+        else:
+            # 检查BGM目录是否有可用音频文件
+            bgm_files = [f for f in os.listdir(bgm_dir) if f.endswith(('.mp3', '.wav', '.m4a'))]
+            if not bgm_files:
+                print(f"警告: BGM目录为空，无可用音频文件 {bgm_dir}")
+                print("自动切换到无BGM模式（发布时在TikTok App内添加BGM）")
+                use_bgm = False
+
+    if not use_bgm:
+        print("提示: 视频将在TikTok App内添加BGM（享受平台热门BGM流量加持）")
 
     # 为每个商品生成视频
     success_count = 0
@@ -108,12 +123,14 @@ def batch_generate():
             # 选择模板
             template_name = select_template(product, i)
 
-            # 选择BGM
-            bgm_path = select_bgm(bgm_dir, template_name)
-            if not bgm_path:
-                print("  跳过: 无可用BGM")
-                fail_count += 1
-                continue
+            # 选择BGM（无BGM模式跳过）
+            bgm_path = None
+            if use_bgm:
+                bgm_path = select_bgm(bgm_dir, template_name)
+                if not bgm_path:
+                    print("  跳过: 无可用BGM")
+                    fail_count += 1
+                    continue
 
             # 生成文案
             subtitle_template = select_subtitle_template(category)
@@ -126,9 +143,9 @@ def batch_generate():
             }
             subtitle = generate_subtitle(product_info, subtitle_template)
 
-            # 生成视频
+            # 生成视频（无BGM模式时bgm_path=None）
             output_path = os.path.join(output_dir, f"{product_id}.mp4")
-            generate_video_a(images, subtitle, bgm_path, output_path)
+            generate_video_a(images, subtitle, bgm_path=bgm_path, output_path=output_path)
 
             print(f"  成功: {output_path}")
             success_count += 1
@@ -145,4 +162,8 @@ def batch_generate():
 
 
 if __name__ == "__main__":
-    batch_generate()
+    import argparse
+    parser = argparse.ArgumentParser(description="批量生成TikTok带货视频")
+    parser.add_argument("--no-bgm", action="store_true", help="不添加BGM（发布时在TikTok内选择）")
+    args = parser.parse_args()
+    batch_generate(use_bgm=not args.no_bgm)

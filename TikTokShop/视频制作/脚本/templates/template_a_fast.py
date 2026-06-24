@@ -23,8 +23,8 @@ TEMPLATE_A_CONFIG = {
 def generate_video_a(
     images: list,
     subtitle: dict,
-    bgm_path: str,
-    output_path: str,
+    bgm_path: str = None,
+    output_path: str = "output.mp4",
 ) -> str:
     """
     生成模板A视频（快节奏卡点风）
@@ -32,7 +32,7 @@ def generate_video_a(
     Args:
         images: 图片路径列表（至少6张）
         subtitle: 文案字典 {"hook": str, "scenes": list, "cta": str}
-        bgm_path: BGM音频文件路径
+        bgm_path: BGM音频文件路径，为None或空字符串时生成无音频视频（发布时在TikTok内选BGM）
         output_path: 输出视频路径
 
     Returns:
@@ -43,21 +43,28 @@ def generate_video_a(
     resolution = config["resolution"]
     fps = config["fps"]
 
+    # 判断是否使用BGM
+    use_bgm = bool(bgm_path)
+
     # 确保图片数量足够
     if len(images) < config["image_count"]:
         images = images * (config["image_count"] // len(images) + 1)
     images = images[:config["image_count"]]
 
-    # 分析BGM鼓点
-    beat_info = analyze_beats(bgm_path)
-    beats = beat_info["beats"]
-
-    # 将图片切换对齐鼓点
-    image_start_times = match_images_to_beats(
-        image_count=len(images),
-        beats=beats,
-        duration=duration
-    )
+    # 计算每张图片的起始时间
+    if use_bgm:
+        # 有BGM：分析BGM鼓点，将图片切换对齐鼓点
+        beat_info = analyze_beats(bgm_path)
+        beats = beat_info["beats"]
+        image_start_times = match_images_to_beats(
+            image_count=len(images),
+            beats=beats,
+            duration=duration
+        )
+    else:
+        # 无BGM：使用均匀分布（每张图 duration/image_count 秒）
+        step = duration / len(images)
+        image_start_times = [i * step for i in range(len(images))]
 
     # 处理每张图片并创建ImageClip
     clips = []
@@ -97,9 +104,10 @@ def generate_video_a(
     video = CompositeVideoClip(clips, size=resolution)
     video = video.set_duration(duration)
 
-    # 添加BGM
-    audio = AudioFileClip(bgm_path).subclip(0, duration)
-    video = video.set_audio(audio)
+    # 添加BGM（无BGM模式跳过此步骤，发布时在TikTok内选择）
+    if use_bgm:
+        audio = AudioFileClip(bgm_path).subclip(0, duration)
+        video = video.set_audio(audio)
 
     # 导出视频
     video.write_videofile(
