@@ -65,15 +65,62 @@
       "add_to_cart": 0,
       "refunds": 0,
       "notes": "下架Mickey手表；上传2个视频并绑定2个商品；视频素材采用商品图片幻灯片方案"
+    },
+    {
+      "date": "2026-06-23",
+      "day_number": 5,
+      "products_listed": 40,
+      "orders": 0,
+      "gmv": 0,
+      "videos": 2,
+      "followers": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "add_to_cart": 0,
+      "refunds": 0,
+      "notes": "新增上架21个商品，扩展品类至项链、耳环等"
+    },
+    {
+      "date": "2026-06-24",
+      "day_number": 6,
+      "products_listed": 60,
+      "orders": 0,
+      "gmv": 0,
+      "videos": 2,
+      "followers": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "add_to_cart": 0,
+      "refunds": 0,
+      "notes": "继续上架20个商品，丰富手镯和眼镜款式"
+    },
+    {
+      "date": "2026-06-25",
+      "day_number": 7,
+      "products_listed": 73,
+      "orders": 0,
+      "gmv": 0,
+      "videos": 3,
+      "followers": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "add_to_cart": 0,
+      "refunds": 0,
+      "notes": "累计73个商品（手镯33+项链20+戒指13+耳环4+套装2+眼镜1）；视频生成工具开发完成，生成首条带货视频；收集16篇冷启动文章"
     }
   ],
   "product_analysis": {
-    "total_products": 19,
+    "total_products": 73,
     "categories": [
-      "戒指（男戒、女戒、情侣戒）",
-      "眼镜（太阳镜）",
-      "手表（女表、儿童表）",
-      "手镯"
+      "手镯/手链/脚链（33个）",
+      "项链（20个）",
+      "戒指（13个）",
+      "耳环（4个）",
+      "套装（2个）",
+      "眼镜/太阳镜（1个）"
     ],
     "removed_products": [
       {
@@ -83,35 +130,40 @@
       }
     ],
     "price_range": {
-      "min": "128130 VND (≈36元)",
-      "max": "291137 VND (≈82元)",
-      "avg": "200000 VND (≈56元)"
+      "min": "116,056 VND (≈30.0元)",
+      "max": "290,972 VND (≈75.1元)",
+      "avg": "162,369 VND (≈41.9元)"
     },
-    "top_products": [
+    "top_potential_products": [
       {
-        "name": "Nhẫn nam xoay titan thép",
-        "price": "209490 VND",
-        "type": "男戒"
+        "name": "Vòng tay cặp thép titan số La Mã",
+        "price": "290,972 VND (≈75.1元)",
+        "category": "手镯/手链/脚链",
+        "reason": "情侣款高客单价，利润率高"
       },
       {
-        "name": "Kính râm GM thời trang cao cấp",
-        "price": "291137 VND",
-        "type": "太阳镜"
+        "name": "Vòng tay nữ thép titan hoa 4 cánh laser",
+        "price": "255,299 VND (≈65.9元)",
+        "category": "手镯/手链/脚链",
+        "reason": "高客单价，设计独特"
       },
       {
-        "name": "Nhẫn đính đá Moissanite",
-        "price": "139778 VND",
-        "type": "女戒"
+        "name": "Lắc chân nữ hình bướm zircon",
+        "price": "232,112 VND (≈59.9元)",
+        "category": "手镯/手链/脚链",
+        "reason": "脚链品类竞争少，差异化"
       },
       {
-        "name": "Đồng hồ nữ cao cấp",
-        "price": "221702 VND",
-        "type": "手表"
+        "name": "Vòng tay thép titan nguyên khối",
+        "price": "194,204 VND (≈50.2元)",
+        "category": "手镯/手链/脚链",
+        "reason": "经典款，受众广，转化稳定"
       },
       {
-        "name": "Vòng tay hoa và bướm",
-        "price": "186371 VND",
-        "type": "手镯"
+        "name": "Dây chuyền nữ ngọc trai Diana",
+        "price": "174,067 VND (≈45.0元)",
+        "category": "项链",
+        "reason": "珍珠款，优雅风格，女性受众"
       }
     ]
   },
@@ -124,8 +176,19 @@
     "个人简介设置完成",
     "创建定价策略指南文档",
     "商品侵权风险检测",
-    "学习TikTok Shop东南亚新商政策必修课"
+    "学习TikTok Shop东南亚新商政策必修课",
+    "累计上架73个商品，涵盖6大品类（手镯/手链/脚链、项链、戒指、耳环、套装、眼镜）",
+    "Python批量视频生成工具开发完成（模板A快节奏卡点风）",
+    "下载19首越南热门BGM音乐库",
+    "收集16篇TikTok Shop冷启动文章建立知识库",
+    "生成首条带货视频（钛钢手镯）"
   ],
-  "next_day_plan": "开始制作带货视频，获取首批曝光",
-  "warnings": []
+  "next_day_plan": "联系供应商获取手镯+项链商品详情图，批量生成带货视频并开始日更发布",
+  "warnings": [
+    {
+      "level": "warning",
+      "content": "上架速度过快（7天73个），建议暂停上新，专注内容制作和运营",
+      "source": "冷启动文章09-新手必看早入驻早死晚布局稳赢"
+    }
+  ]
 }

@@ -1,0 +1,264 @@
+{
+  "bgm_library": [
+    {
+      "id": "bgm_01",
+      "name": "See Tình (Cukak Remix)",
+      "artist": "Hoàng Thùy Linh",
+      "file": "bgm_01.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_02",
+      "name": "Cuối Cùng Thì (Cukak Remix)",
+      "artist": "Jack - J97",
+      "file": "bgm_02.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_03",
+      "name": "Bo Xi Bo (Đại Mèo Remix)",
+      "artist": "Hoàng Thùy Linh",
+      "file": "bgm_03.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_04",
+      "name": "Tòng Phu (Đại Mèo Remix)",
+      "artist": "Keyo",
+      "file": "bgm_04.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_05",
+      "name": "Cắt Đôi Nỗi Sầu (Remix)",
+      "artist": "Tăng Duy Tân",
+      "file": "bgm_05.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_06",
+      "name": "Khuất Lối (Orinn Remix)",
+      "artist": "H-Kray",
+      "file": "bgm_06.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_07",
+      "name": "Vương vấn (Remix)",
+      "artist": "Hana Cẩm Tiên",
+      "file": "bgm_07.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_08",
+      "name": "Kiếp Má Hồng (Remix)",
+      "artist": "Tlong",
+      "file": "bgm_08.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_09",
+      "name": "Người Đáng Thương Là Anh (Remix)",
+      "artist": "Only C",
+      "file": "bgm_09.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_10",
+      "name": "Mong Một Ngày Anh Nhớ Đến Em (Remix)",
+      "artist": "Hương Ly",
+      "file": "bgm_10.mp3",
+      "exists": true,
+      "bpm_type": "fast",
+      "style": "快节奏",
+      "suitable_templates": [
+        "A"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_11",
+      "name": "Ai Đưa Em Về",
+      "artist": "TiA",
+      "file": "bgm_11.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_12",
+      "name": "Thiệp hồng",
+      "artist": "Trường Lê",
+      "file": "bgm_12.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_13",
+      "name": "Sao cũng được",
+      "artist": "Thành Đạt & Đông Thiên Đức",
+      "file": "bgm_13.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_14",
+      "name": "Em ơi đừng khóc",
+      "artist": "Duy Phước",
+      "file": "bgm_14.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_15",
+      "name": "Somewhere",
+      "artist": "July",
+      "file": "bgm_15.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_16",
+      "name": "Em này",
+      "artist": "Gin Tuấn Kiệt",
+      "file": "bgm_16.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_17",
+      "name": "Ngáo Ngơ",
+      "artist": "HIEUTHUHAI",
+      "file": "bgm_17.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_18",
+      "name": "Tràn Bộ Nhớ",
+      "artist": "Dương Domic",
+      "file": "bgm_18.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_19",
+      "name": "Say Yes",
+      "artist": "Suni Hạ Linh",
+      "file": "bgm_19.mp3",
+      "exists": false,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    },
+    {
+      "id": "bgm_20",
+      "name": "Liên Hoa",
+      "artist": "Phương Mỹ Chi",
+      "file": "bgm_20.mp3",
+      "exists": true,
+      "bpm_type": "slow",
+      "style": "中慢节奏",
+      "suitable_templates": [
+        "B"
+      ],
+      "duration": 18
+    }
+  ]
+}
