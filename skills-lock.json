@@ -7,6 +7,12 @@
       "skillPath": "skills/brainstorming/SKILL.md",
       "computedHash": "26a8eb33d548f0c4ead9e7bc13a90c3853398d30345c651245a61a12b869f130"
     },
+    "cross-border-ecommerce": {
+      "source": "nexscope-ai/ecommerce-skills",
+      "sourceType": "github",
+      "skillPath": "cross-border-ecommerce/SKILL.md",
+      "computedHash": "eb574cb6cfcc0e8715412a5f56e62d09b1a64f02ec4f126472a5a4df92569906"
+    },
     "writing-plans": {
       "source": "obra/superpowers",
       "sourceType": "github",

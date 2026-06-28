@@ -33,17 +33,16 @@ Tiktok/
 ├── AGENTS.md                          # 本文件：项目手册（AI 上下文入口）
 ├── .gitignore                         # Git 忽略规则
 ├── skills-lock.json                   # 技能锁定文件（brainstorming, writing-plans）
-├── 迁移操作指南.md                     # TRAE IDE → TRAE Work 迁移指南
 │
 ├── .agents/                           # 内置技能（obra/superpowers 官方技能）
 │   └── skills/
 │       ├── brainstorming/             # 头脑风暴与设计评审
+│       ├── cross-border-ecommerce/    # 跨境电商扩展顾问
 │       └── writing-plans/             # 实施计划编写
 │
 ├── .trae/                             # TRAE 技能与数据（主技能目录）
 │   ├── data/
 │   │   └── shop-metrics.json          # 📊 店铺核心指标数据（单一真相来源）
-│   ├── documents/                     # 历史规划文档（11 个计划文件）
 │   └── skills/
 │       ├── tiktok-shop-coach/         # 🎯 TikTok Shop 运营助手（核心技能）
 │       │   ├── SKILL.md               #   技能入口（角色路由）
@@ -60,43 +59,31 @@ Tiktok/
 │       ├── knowledge-harvester/       # 🔗 知识收割器（URL 自动抓取学习）
 │       └── task-planner/              # 📋 任务规划器
 │
-├── .qoder/                            # ⚠️ 废弃目录（遗留技能，请使用 .trae/）
-│   ├── skills/
-│   │   ├── tiktok-shop-coach/         #   旧版技能（已废弃）
-│   │   ├── ecom-image-viet-translate/ #   电商图片越南语翻译（已废弃）
-│   │   └── knowledge-harvester/       #   旧版知识收割器（已废弃）
-│   └── data/
-│       └── shop-metrics.json          #   旧版数据（已废弃，以 .trae/ 为准）
-│
 ├── TikTokShop/                        # 📁 运营工作目录
 │   ├── readme.md                      #   产品列表 API 路径参考
-│   ├── products.json                  #   📦 商品数据（TikTok API 导出，19 个商品）
+│   ├── products.json                  #   📦 商品数据（TikTok API 导出）
 │   ├── products-simple.json           #   📦 商品数据精简版
+│   ├── products_erp.json              #   📦 ERP 商品数据
 │   ├── 定价策略指南.md                 #   💰 详细定价策略（含 2026 年平台费率）
 │   ├── 越南语评论模板.md               #   💬 养号互动评论模板（48 条，6 大类）
+│   ├── 每日运营工作日常.md             #   📋 每日运营工作清单
+│   ├── 热搜词.json                    #   🔥 热搜词数据
 │   ├── 2026/                          #   📅 运营日志（按年份/月份组织）
 │   │   └── 6月/
 │   │       ├── 6月19日.md              #     第 1 天：上架 20 个商品
 │   │       ├── 6月20日.md              #     第 2 天：定价策略制定
-│   │       └── 6月22日.md              #     第 4 天：下架侵权商品、视频上传
-│   ├── 学习笔记/                       #   📝 平台课程学习记录
-│   │   ├── TikTok Shop东南亚新商政策必修课.md
-│   │   ├── 卖家学习中心课程资源库.md
-│   │   └── 学习进度追踪.md
-│   └── 知识库/                         #   📚 本地知识库（含历史版本与工具脚本）
-│       ├── index.json                 #   知识库索引
-│       ├── config.json                #   知识库配置
-│       ├── Kalodata资源与行业白皮书.md
-│       ├── 卖家大学文章目录.json
+│   │       ├── 6月22日.md              #     第 4 天：下架侵权商品、视频上传
+│   │       ├── 6月25日.md              #     第 7 天
+│   │       ├── 6月26日.md              #     第 8 天
+│   │       └── 脚本/                   #     📝 抖音口播脚本
+│   └── 学习笔记/                       #   📝 平台课程学习记录
+│       ├── TikTok Shop东南亚新商政策必修课.md
 │       ├── 卖家学习中心课程资源库.md
-│       ├── metadata/                  #   元数据
-│       ├── history/                   #   历史版本
-│       └── utils/                     #   工具脚本（Python）
+│       └── 学习进度追踪.md
 │
 ├── 选品/                              # 🖼️ 选品参考图片（4 张）
-├── 工具/                              # 🛠️ 工具文件
-│   └── 东南亚跨境物流运费价格表20260401.xlsx
-└── Logistics/                         # 物流计算器子项目（独立）
+└── 工具/                              # 🛠️ 工具文件
+    └── 东南亚跨境物流运费价格表20260401.xlsx
 ```
 
 ---
@@ -192,6 +179,7 @@ Tiktok/
 |------|------|------|
 | products.json | `TikTokShop/products.json` | TikTok API 导出的完整商品数据（含 SKU、价格、库存、分类等） |
 | products-simple.json | `TikTokShop/products-simple.json` | 商品数据精简版 |
+| products_erp.json | `TikTokShop/products_erp.json` | ERP 商品数据 |
 
 ### 数据规范
 
@@ -256,12 +244,6 @@ Tiktok/
 | 🤝 合作与推广 | `达人合作.md`、`广告投放.md` | KOL 合作、投流策略 |
 | ❓ 常见问题 | `常见问题.md` | 新手 FAQ 与应急处理 |
 
-### 本地知识库
-
-**路径**：`TikTokShop/知识库/`
-
-包含知识库的本地副本、历史版本（`history/`）、元数据（`metadata/`）和工具脚本（`utils/`）。
-
 ### 学习笔记
 
 **路径**：`TikTokShop/学习笔记/`
@@ -320,7 +302,6 @@ Tiktok/
 | `.trae/` | ✅ 主目录 | 技能和数据的主目录 |
 | `.agents/` | ✅ 官方技能 | obra/superpowers 官方技能 |
 | `TikTokShop/` | ✅ 工作目录 | 运营文件、日志、知识库 |
-| `.qoder/` | ⚠️ 废弃 | 遗留目录，所有功能已迁移到 `.trae/`，请勿使用 |
 
 ### 时区
 
